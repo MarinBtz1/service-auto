@@ -1,0 +1,4 @@
+# fisiere ignorate de Git
+logs/
+.env
+*.tmp
