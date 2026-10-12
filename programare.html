@@ -1,7 +1,45 @@
-<h2>Programare la service</h2>
-<form>
-  <input type="text" placeholder="Nume">
-  <input type="text" placeholder="Numar auto">
-  <input type="date">
-  <button>Programează</button>
-</form>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Auto – Programare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#continut">Sari la conținut</a>
+  <header>
+    <h1>Service Auto</h1>
+    <nav aria-label="Meniu principal">
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="servicii.html">Servicii</a></li>
+        <li><a href="programare.html" aria-current="page">Programare</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Autentificare</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="continut">
+    <h2>Programare la service</h2>
+    <form id="formProgramare">
+      <label for="nume">Nume</label>
+      <input id="nume" type="text" required>
+      <label for="auto">Număr auto</label>
+      <input id="auto" type="text" required>
+      <label for="serviciu">Serviciu</label>
+      <select id="serviciu">
+        <option>Schimb de ulei</option>
+        <option>Diagnosticare</option>
+        <option>Frâne</option>
+      </select>
+      <label for="data">Data</label>
+      <input id="data" type="date" required>
+      <button type="submit">Programează</button>
+    </form>
+    <p id="mesaj" aria-live="polite"></p>
+  </main>
+  <footer>Contact: info@serviceauto.md</footer>
+  <script src="script.js"></script>
+</body>
+</html>

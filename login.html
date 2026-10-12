@@ -1,6 +1,35 @@
-<h2>Autentificare</h2>
-<form>
-  <input type="email" placeholder="Email">
-  <input type="password" placeholder="Parola">
-  <button>Intră</button>
-</form>
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Service Auto – Autentificare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#continut">Sari la conținut</a>
+  <header>
+    <h1>Service Auto</h1>
+    <nav aria-label="Meniu principal">
+      <ul>
+        <li><a href="index.html">Acasă</a></li>
+        <li><a href="servicii.html">Servicii</a></li>
+        <li><a href="programare.html">Programare</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html" aria-current="page">Autentificare</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="continut">
+    <h2>Autentificare</h2>
+    <form>
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="email" required>
+      <label for="parola">Parola</label>
+      <input id="parola" type="password" autocomplete="current-password" required>
+      <button type="submit">Intră</button>
+    </form>
+  </main>
+  <footer>Contact: info@serviceauto.md</footer>
+</body>
+</html>
